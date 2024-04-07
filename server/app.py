@@ -10,7 +10,7 @@ migrate = Migrate(app, db)
 
 @app.route('/')
 def home():
-    return jsonify({'message': 'Welcome to the Pizza Restaurant API!'})
+    return ({'message': 'Welcome to the Pizza Restaurant API!'})
 
 # Error handling for not found and unexpected errors
 @app.errorhandler(404)
